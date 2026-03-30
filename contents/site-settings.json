@@ -1,0 +1,112 @@
+{
+  "site_name": "GlobeFactor",
+  "site_title": "GlobeFactor",
+  "logo_text": "GlobeFactor",
+  "tagline": "Decoding the World, One Factor at a Time",
+  "instagram_account": "",
+  "twitter_account": "",
+  "github": "BackSuit/GlobeFactor",
+  "facebook_account": "",
+  "whatsapp": "+9779840889975",
+  "base_url": "https://globefactor.com",
+  "site_keywords": [
+    {
+      "keyword": "global politics"
+    },
+    {
+      "keyword": "geopolitics"
+    },
+    {
+      "keyword": "international relations"
+    },
+    {
+      "keyword": "conflicts and security"
+    },
+    {
+      "keyword": "economy and trade"
+    },
+    {
+      "keyword": "geopolitical analysis"
+    },
+    {
+      "keyword": "world affairs"
+    },
+    {
+      "keyword": "foreign policy"
+    },
+    {
+      "keyword": "diplomacy"
+    },
+    {
+      "keyword": "global security"
+    },
+    {
+      "keyword": "GlobeFactor"
+    }
+  ],
+  "site_description": "GlobeFactor is your go-to destination for in-depth analysis, breaking news, and expert commentary on global politics, conflicts, economy, international relations, and geopolitical strategy.",
+  "seo_meta_title": "GlobeFactor - Global Politics, Geopolitical Analysis & World Affairs",
+  "seo_meta_description": "Stay informed with GlobeFactor. Expert analysis on global politics, conflicts & security, economy & trade, international relations, and geopolitical strategy shaping our world.",
+  "seo_meta_keywords": "global politics, geopolitics, international relations, conflicts, security, economy, trade, geopolitical analysis, world affairs, foreign policy, diplomacy",
+  "contact_address": "",
+  "contact_phonenumber": "",
+  "contact_email": "hello@globefactor.com",
+  "posts_per_page": 12,
+  "use_api_categories": false,
+  "predefined_categories": [
+    {
+      "slug": "global-politics",
+      "name": "Global Politics",
+      "description": "Coverage of political developments, elections, and governance worldwide"
+    },
+    {
+      "slug": "conflicts-security",
+      "name": "Conflicts & Security",
+      "description": "Analysis of armed conflicts, defense policy, terrorism, and global security threats"
+    },
+    {
+      "slug": "economy-trade",
+      "name": "Economy & Trade",
+      "description": "Global economic trends, trade agreements, sanctions, and financial markets"
+    },
+    {
+      "slug": "geopolitical-analysis",
+      "name": "Geopolitical Analysis",
+      "description": "Deep-dive strategic analysis of power dynamics, alliances, and regional influence"
+    },
+    {
+      "slug": "international-relations",
+      "name": "International Relations",
+      "description": "Diplomacy, treaties, multilateral organizations, and foreign policy developments"
+    }
+  ],
+  "navbar_groups": [
+    {
+      "label": "Global Politics",
+      "slug": "global-politics"
+    },
+    {
+      "label": "Conflicts & Security",
+      "slug": "conflicts-security"
+    },
+    {
+      "label": "Economy & Trade",
+      "slug": "economy-trade"
+    },
+    {
+      "label": "Geopolitical Analysis",
+      "slug": "geopolitical-analysis"
+    },
+    {
+      "label": "International Relations",
+      "slug": "international-relations"
+    }
+  ],
+  "featured_categories": [
+    "global-politics",
+    "conflicts-security",
+    "geopolitical-analysis"
+  ],
+  "podcast_cover_url": "https://res.cloudinary.com/yacloud/image/upload/v1614332851/ya-pod_gi1tmm.jpg",
+  "mood_cover_url": "/images/mood/v5/mood-v5-cover.jpg"
+}
