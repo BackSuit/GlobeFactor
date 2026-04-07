@@ -15,7 +15,7 @@ export default function Page({ articles, pagination, page }) {
         title={"Articles"}
         articles={articles}
         pagination={pagination}
-      />
+    />
     </Layout>
   )
 }

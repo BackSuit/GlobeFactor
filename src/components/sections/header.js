@@ -9,13 +9,19 @@ import {
   InputLeftElement,
   HStack,
 } from "@chakra-ui/react"
-import { HiX as CloseIcon, HiMenu as MenuIcon, HiSearch } from "react-icons/hi"
+import {
+  HiX as CloseIcon,
+  HiMenu as MenuIcon,
+  HiSearch,
+} from "@/components/icons"
 import { useRouter } from "next/router"
 import { useState } from "react"
+import dynamic from "next/dynamic"
 import Logo from "./Logo"
-import MobileNavbar from "./MobileNavbar"
 import NavDropdown from "./NavDropdown"
-import AuthButton from "../auth/AuthButton"
+
+const MobileNavbar = dynamic(() => import("./MobileNavbar"), { ssr: false })
+const AuthButton = dynamic(() => import("../auth/AuthButton"), { ssr: false })
 
 function SearchBar() {
   const router = useRouter()
@@ -37,7 +43,7 @@ function SearchBar() {
     >
       <InputGroup size="sm" w="220px">
         <InputLeftElement pointerEvents="none">
-          <Icon as={HiSearch} color="gray.400" />
+          <Icon as={HiSearch} color="gray.500" />
         </InputLeftElement>
         <Input
           placeholder="Search articles..."
@@ -101,7 +107,7 @@ export default function Header() {
             size="sm"
             icon={<Icon boxSize="1.25em" as={isOpen ? CloseIcon : MenuIcon} />}
           />
-          <Logo size="md" />
+          <Logo size="md" isLight globeStrokeColor="#000" />
         </HStack>
 
         <MobileNavbar isOpen={isOpen} onClose={onClose} />

@@ -105,13 +105,13 @@ export default function Logo({ isLight = false }) {
         fontWeight="700"
         fontFamily="'Inter', sans-serif"
         letterSpacing="-0.01em"
-        color={isLight ? "white" : "brand.ink"}
+        color={isLight ? "black" : "brand.ink"}
         lineHeight={1}
       >
         Globe
         <Text
           as="span"
-          color={isLight ? "#5EEAD4" : "brand.primary"}
+          color={isLight ? "brand.primary" : "brand.secondary"}
           fontWeight="800"
         >
           Factor

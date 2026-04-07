@@ -1,6 +1,10 @@
 import { extendTheme, theme as chakraTheme } from "@chakra-ui/react"
 
 const theme = extendTheme({
+  config: {
+    initialColorMode: "light",
+    useSystemColorMode: false,
+  },
   fonts: {
     heading: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
     body: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
@@ -11,12 +15,14 @@ const theme = extendTheme({
     brand: {
       primary: "#0F766E", // Deep teal — authority & trust
       secondary: "#1E3A5F", // Navy blue — geopolitical gravitas
+      light: "#5EEAD4", // Mint — lighter accent used on light backgrounds
       accent: "#D4A017", // Gold — premium, strategic
       cream: "#FFFFFF",
       parchment: "#F0FDFA", // Very light teal tint
       ink: "#0F172A", // Slate-900 — strong headlines
       gray: "#475569", // Slate-600
       lightGray: "#94A3B8", // Slate-400
+      gradient: "linear-gradient(90deg, #14B8A6, #0F766E)",
     },
   },
   breakpoints: {
@@ -69,7 +75,7 @@ const theme = extendTheme({
     global: {
       "::selection": {
         color: "white",
-        background: "#0F766E",
+        background: "brand.primary",
       },
       "::-webkit-scrollbar": {
         width: "0.5em",
@@ -103,11 +109,11 @@ const theme = extendTheme({
           marginBottom: 4,
         },
         a: {
-          color: "#0F766E",
+          color: "brand.primary",
           fontWeight: "500",
           _hover: {
             textDecoration: "underline",
-            color: "#1E3A5F",
+            color: "brand.secondary",
           },
         },
         p: {
@@ -161,7 +167,7 @@ const theme = extendTheme({
             left: 0,
             bottom: 0,
             width: "4px",
-            bgColor: "#0F766E",
+            bgColor: "brand.primary",
             borderRadius: "full",
           },
         },
@@ -198,7 +204,7 @@ const theme = extendTheme({
         pointerEvents: "none",
       },
       "#nprogress .bar": {
-        background: "linear-gradient(90deg, #14B8A6, #0F766E)",
+        background: "brand.gradient",
         pos: "fixed",
         zIndex: 99999,
         top: 0,
